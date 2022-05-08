@@ -2,7 +2,7 @@
   "name": "creap",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://github.io/honk-portal-frontend",
+  "homepage": "https://syjn99.github.io/honk-portal-frontend",
   "dependencies": {
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.3.2",
