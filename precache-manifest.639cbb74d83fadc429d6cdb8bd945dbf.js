@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "ccea87727fe8bd1d3083eef7da1bd38c",
+    "revision": "e6ba6bcfe04e8cd418bd34ac460ad9c7",
     "url": "/honk-portal-frontend/index.html"
   },
   {
-    "revision": "1ab288ad312d58115491",
+    "revision": "a3732aaee764e98d5016",
     "url": "/honk-portal-frontend/static/css/main.edb83f00.chunk.css"
   },
   {
@@ -12,8 +12,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/honk-portal-frontend/static/js/2.749bd410.chunk.js"
   },
   {
-    "revision": "1ab288ad312d58115491",
-    "url": "/honk-portal-frontend/static/js/main.3969ab5e.chunk.js"
+    "revision": "a3732aaee764e98d5016",
+    "url": "/honk-portal-frontend/static/js/main.c9b47997.chunk.js"
   },
   {
     "revision": "4ec4a7729e63cb30e957",
