@@ -88,9 +88,28 @@ const App = () => {
         method: "eth_requestAccounts",
       });
 
+      const provider = new ethers.providers.Web3Provider(ethereum);
+      const signer = provider.getSigner();
+      const honkPortalContract = new ethers.Contract(
+        contractAddress,
+        contractABI,
+        signer
+      );
+
       console.log("Connected", accounts[0]);
       setCurrentAccount(accounts[0]);
-      setName(accounts[0].substr(0, 6) + "...");
+
+      let nickname;
+      const hasNickname = await honkPortalContract.getHasNickname(accounts[0]);
+
+      if (hasNickname) {
+        nickname = await honkPortalContract.getNickname(accounts[0]);
+        setName(nickname);
+        setIsRegistered(true);
+      } else {
+        setName(accounts[0].substr(0, 6) + "...");
+        setIsRegistered(false);
+      }
     } catch (error) {
       console.log(error);
     }

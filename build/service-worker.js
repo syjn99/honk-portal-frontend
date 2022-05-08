@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/honk-portal-frontend/precache-manifest.e1e564e4c44bbf13b9d4b8d9ce639d4e.js"
+  "/honk-portal-frontend/precache-manifest.caeb4682f24c38f9eb93dccd41e99de4.js"
 );
 
 self.addEventListener('message', (event) => {
