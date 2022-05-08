@@ -1,0 +1,173 @@
+body {
+  background-color: #188cd8;
+}
+
+.mainContainer {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin-top: 64px;
+}
+
+.profile {
+  position: fixed;
+  width: 20%;
+  background-color: white;
+  right: 20px;
+  top: 20px;
+  text-align: center;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.profile__head {
+  color: gray;
+}
+
+.profile__img {
+  width: 50px;
+  height: 50px;
+  margin: 10px;
+}
+
+.registerBtn,
+.changeBtn {
+  cursor: pointer;
+  padding: 8px;
+  border: 0;
+  border-radius: 5px;
+}
+
+.profile__nickname {
+  font-weight: 700;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.dataContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 40%;
+  max-width: 600px;
+  min-width: 400px;
+}
+
+.header {
+  text-align: center;
+  font-size: 32px;
+  font-weight: 600;
+  color: white;
+}
+
+.bio {
+  text-align: center;
+  color: wheat;
+  margin-top: 16px;
+}
+
+.textbox,
+.nameBox {
+  box-sizing: border-box;
+  width: 100%;
+  height: 50px;
+  margin-top: 10px;
+  padding: 0;
+  border: 0;
+  padding: 8px;
+  border-radius: 5px;
+}
+
+.honkButton {
+  cursor: pointer;
+  margin-top: 16px;
+  padding: 8px;
+  border: 0;
+  border-radius: 5px;
+}
+
+.connectBtn {
+  font-size: 20px;
+}
+
+.pending,
+.complete {
+  position: fixed;
+  display: flex;
+  right: 20px;
+  bottom: 20px;
+  background-color: white;
+  border-radius: 20px;
+  width: 280px;
+  height: 50px;
+  justify-content: space-evenly;
+  align-items: center;
+  border: solid 1px black;
+}
+
+.spin {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: dashed 3px black;
+  animation-name: spin;
+  animation-duration: 1.5s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+.pending__text,
+.complete_text {
+  text-align: center;
+  font-size: 20px;
+  color: black;
+  line-height: 50px;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.feed {
+  background-color: OldLace;
+  margin-top: 16px;
+  padding: 8px;
+  display: flex;
+  align-items: center;
+}
+
+.feed__profile {
+  width: 50px;
+  height: 50px;
+  margin: 10px;
+  margin-right: 5%;
+}
+
+.feed__content * {
+  margin: 5px 5px;
+}
+
+.feed__content {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  width: 80%;
+}
+
+.feed__msg {
+  word-break: break-all;
+}
+
+.feed__address {
+  font-size: 25px;
+  font-weight: 600;
+}
+
+.feed__time {
+  color: gray;
+}
