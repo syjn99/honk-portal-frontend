@@ -101,6 +101,7 @@ const App = () => {
 
       let nickname;
       const hasNickname = await honkPortalContract.getHasNickname(accounts[0]);
+      console.log(hasNickname);
 
       if (hasNickname) {
         nickname = await honkPortalContract.getNickname(accounts[0]);
